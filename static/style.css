@@ -1,0 +1,219 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    position: relative;
+    font-family: Arial, sans-serif;
+    color: white; /* Ensure text stands out */
+    background: url('./images/background.jpg') no-repeat center center fixed; /* Static background image */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+}
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(36, 27, 27, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 10; /* Ensure it's on top of content */
+}
+
+.navbar .logo {
+    width: 200px;
+    height: auto;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 8px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: red;
+    border-radius: 2px;
+}
+
+/* Main Content */
+.content {
+    margin-top: 300px; /* Space for the fixed navbar */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth fade-in effect for content */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling for the Date Input */
+#date {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#date:focus {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.7);
+}
+
+/* Styling for the Fetch Button */
+#fetchButton {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#fetchButton:hover {
+    background-color: #e64a19;
+    transform: translateY(-3px);
+}
+
+#fetchButton:active {
+    background-color: #d84315;
+    transform: translateY(0);
+}
+
+/* Add subtle hover effects to input and button */
+#fetchButton, #date {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#fetchButton:hover, #date:hover {
+    box-shadow: 0px 0px 15px 3px rgba(255, 87, 34, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Image Styling */
+#apod-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+#apod-image:hover {
+    transform: scale(1.05);
+}
+
+/* Back Button */
+#backButton {
+    display: block; /* Center button */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto 30px auto; /* Centered and with spacing */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#backButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Ensure smooth scrolling is enabled */
+html, body {
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* ABOUT PAGE STYLES */
+.about-section {
+    padding: 100px 20px;
+    background: url('background.jpg') center/cover no-repeat;
+    text-align: center;
+    color: white;
+}
+
+.about-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInAbout 1s ease-in-out;
+}
+
+.about-section p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+    animation: fadeInAbout 1.5s ease-in-out;
+}
+
+.about-section .project-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.project-info div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-info div:hover {
+    transform: translateY(-10px);
+}
+
+/* Animation for About Us section */
+@keyframes fadeInAbout {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+           
+            background-image: url('/static/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #150c0c;
+            color: #ffd700;
+            padding: 0px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        main {
+            padding: 100px 20px 20px;
+            
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #1a1a1d;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            padding: 20px;
+            margin: 150px 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .card h3 {
+            margin: 15px 0;
+            color:#ffcc00
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0077b5; /* Default color for LinkedIn, can change dynamically */
+        }
+        footer {
+            background-color: #0c0a0a;
+            color: #fff;
+            padding: 0px 0px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body >
+
+    <header>
+        <h1>Meet The iLLMATICS</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <!-- Card 1: Your Details -->
+            <div class="card">
+                <img src="/static/images/sabya.jpeg" alt="Sabyasachee">
+                <h3>Sabyasachee Thakur</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sabyasachee-thakur-5bb764246/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>                    
+                    <a href="mailto:thakursabya7@gmail.com" target="_blank">✉️</a>
+                    <a href="https://github.com/Sabya-sudo" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <!-- Card 2: Teammate 1 -->
+            <div class="card">
+                <img src="/static/images/kamaljeet.jpeg" alt="Kamaljeet">
+                <h3>Kamaljeet Yadav</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kamaljeet-yadav/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:kamaljeetkamaljeet548@gmail.com" target="_blank">✉️</a> 
+                    <a href="https://github.com/kamaljeet-01" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                </div>
+                
+            </div>
+
+            <!-- Card 3: Teammate 2 -->
+            <div class="card">
+                <img src="/static/images/aklavya.jpeg" alt="Aklavya">
+                <h3>Kumar Aklavya</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kumar-aklavya/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:anishaklavya@gmail.com" target="_blank">✉️</a>
+                    <a href="https://github.com/aklavya07" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 iLLMATIC</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Starfield Background -->
+    <div class="starfield"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <img class="logo" src="/static/images/logo-removebg-preview.png" alt="Social Connect">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="/static/contact.html">Contact</a></li>
+            <li><a href="https://www.nasa.gov/">Explore</a></li>
+            <li><a href="/static/about.html">About</a></li> 
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Fetch Image</h1>
+        <input type="date" id="date" name="date">
+        <button id="fetchButton">Fetch Image</button>
+    </div>
+
+    <!-- Include Axios Library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
